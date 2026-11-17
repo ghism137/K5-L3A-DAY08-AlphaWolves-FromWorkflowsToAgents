@@ -18,5 +18,8 @@ student_drop/
 src/reports/hidden_grade.json
 src/reports/bonus_hidden.json
 
+# Personal notes, not part of the submission.
+local_notes/
+
 # Instructor-only hidden pack. Never push it to this repo.
 src/eval/instructor/
