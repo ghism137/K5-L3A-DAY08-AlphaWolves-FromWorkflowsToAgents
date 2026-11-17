@@ -53,7 +53,7 @@ Chi tiết đóng góp nằm trong `TEAM.md` (bảng đóng góp) và báo cáo 
 
 ## 7. Hạn chế và hướng cải thiện
 
-MockLLM không phải model sản xuất; latency là `unavailable`; cost là mô phỏng, không phải hóa đơn API. Bộ public chỉ có 14 claim nên pass 1.000 chưa chứng minh được kết quả trên bộ hidden (40 claim). Quyết định chọn workflow sẽ đổi nếu bộ hidden có claim cần model đọc hiểu ticket mơ hồ, hoặc nếu dùng model thật làm chênh lệch pass rate lớn hơn chênh lệch cost. Chưa tự kiểm trên `student_drop/` vì chưa có thư mục này; chưa làm bonus.
+MockLLM không phải model sản xuất; latency là `unavailable`; cost là mô phỏng, không phải hóa đơn API. Bộ public chỉ có 14 claim nên pass 1.000 chưa chứng minh được kết quả trên bộ hidden (40 claim). Quyết định chọn workflow sẽ đổi nếu bộ hidden có claim cần model đọc hiểu ticket mơ hồ, hoặc nếu dùng model thật làm chênh lệch pass rate lớn hơn chênh lệch cost. Chưa tự kiểm trên `student_drop/` vì chưa có thư mục này. Bonus: làm B4 (`report/team/bonus_report.md`) và B7 (`report/team/bonus_report_b7.md`); theo luật chỉ một topic được chấm.
 
 ## 8. Tài liệu tham khảo
 
