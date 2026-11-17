@@ -1,0 +1,365 @@
+{
+  "chosen_shape": "workflow",
+  "controlled_variables": {
+    "as_of": "2026-11-15",
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "claim_ids": [
+      "C-001",
+      "C-002",
+      "C-003",
+      "C-004",
+      "C-005",
+      "C-006",
+      "C-007",
+      "C-008",
+      "C-009",
+      "C-010",
+      "C-011",
+      "C-012",
+      "C-013",
+      "C-014"
+    ],
+    "pricing": {
+      "simulated": true,
+      "currency": "VND",
+      "input_per_1k_tokens_vnd": 20,
+      "output_per_1k_tokens_vnd": 80,
+      "tool_call_vnd": 10
+    },
+    "model_backend": "MockLLM",
+    "latency": "unavailable",
+    "isolation": "fresh_sqlite_per_trial"
+  },
+  "shapes": {
+    "workflow": {
+      "trials": 70,
+      "successes": 70,
+      "pass_rate": 1.0,
+      "pass_5": 1.0,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 28.785714285714285,
+      "mean_model_calls": 1.0,
+      "bootstrap_ci95_by_claim": [
+        1.0,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9479769368117258,
+        0.9999999999999999
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "single": {
+      "trials": 70,
+      "successes": 70,
+      "pass_rate": 1.0,
+      "pass_5": 1.0,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 30.041428571428572,
+      "mean_model_calls": 3.7857142857142856,
+      "bootstrap_ci95_by_claim": [
+        1.0,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9479769368117258,
+        0.9999999999999999
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "orchestrator": {
+      "trials": 70,
+      "successes": 70,
+      "pass_rate": 1.0,
+      "pass_5": 1.0,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 39.09714285714286,
+      "mean_model_calls": 2.9285714285714284,
+      "bootstrap_ci95_by_claim": [
+        1.0,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9479769368117258,
+        0.9999999999999999
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "swarm": {
+      "trials": 70,
+      "successes": 69,
+      "pass_rate": 0.9857142857142858,
+      "pass_5": 0.9285714285714286,
+      "seed_variance": 0.0008163265306122443,
+      "cost_per_success_vnd": 49.56695652173913,
+      "mean_model_calls": 3.0,
+      "bootstrap_ci95_by_claim": [
+        0.9571428571428572,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9234181279042126,
+        0.9974737535700353
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "rules_only": {
+      "trials": 70,
+      "successes": 70,
+      "pass_rate": 1.0,
+      "pass_5": 1.0,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 27.857142857142858,
+      "mean_model_calls": 0.0,
+      "bootstrap_ci95_by_claim": [
+        1.0,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9479769368117258,
+        0.9999999999999999
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "no_zero_gate": {
+      "trials": 70,
+      "successes": 70,
+      "pass_rate": 1.0,
+      "pass_5": 1.0,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 28.790000000000003,
+      "mean_model_calls": 1.0,
+      "bootstrap_ci95_by_claim": [
+        1.0,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9479769368117258,
+        0.9999999999999999
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "no_needs_info_gate": {
+      "trials": 70,
+      "successes": 65,
+      "pass_rate": 0.9285714285714286,
+      "pass_5": 0.9285714285714286,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 31.76923076923077,
+      "mean_model_calls": 1.0,
+      "bootstrap_ci95_by_claim": [
+        0.7857142857142857,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.8434458769666427,
+        0.9691057831576938
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "swarm_pruned": {
+      "trials": 70,
+      "successes": 69,
+      "pass_rate": 0.9857142857142858,
+      "pass_5": 0.9285714285714286,
+      "seed_variance": 0.0008163265306122443,
+      "cost_per_success_vnd": 48.73739130434783,
+      "mean_model_calls": 1.7714285714285714,
+      "bootstrap_ci95_by_claim": [
+        0.9571428571428572,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9234181279042126,
+        0.9974737535700353
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    },
+    "orchestrator_no_model_turns": {
+      "trials": 70,
+      "successes": 70,
+      "pass_rate": 1.0,
+      "pass_5": 1.0,
+      "seed_variance": 0.0,
+      "cost_per_success_vnd": 38.07142857142857,
+      "mean_model_calls": 1.0,
+      "bootstrap_ci95_by_claim": [
+        1.0,
+        1.0
+      ],
+      "wilson_ci95_by_trial": [
+        0.9479769368117258,
+        0.9999999999999999
+      ],
+      "secret_leak_count": 0,
+      "approval_bypass_count": 0
+    }
+  },
+  "comparisons_vs_chosen": {
+    "single": {
+      "paired_trials": 70,
+      "only_chosen_passes": 0,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 0,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.0,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.0436228287841192,
+      "pass_metrics_unchanged": true
+    },
+    "orchestrator": {
+      "paired_trials": 70,
+      "only_chosen_passes": 0,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 0,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.0,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.3582133995037224,
+      "pass_metrics_unchanged": true
+    },
+    "swarm": {
+      "paired_trials": 70,
+      "only_chosen_passes": 1,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 1,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.014285714285714235,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.042857142857142816
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.7219290106807639,
+      "pass_metrics_unchanged": false
+    },
+    "rules_only": {
+      "paired_trials": 70,
+      "only_chosen_passes": 0,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 0,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.0,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_per_success_ratio_other_over_chosen": 0.967741935483871,
+      "pass_metrics_unchanged": true
+    },
+    "no_zero_gate": {
+      "paired_trials": 70,
+      "only_chosen_passes": 0,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 0,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.0,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.0001488833746899,
+      "pass_metrics_unchanged": true
+    },
+    "no_needs_info_gate": {
+      "paired_trials": 70,
+      "only_chosen_passes": 5,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 0.0625,
+      "sign_test_p": 0.0625,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 1,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.0714285714285714,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.2142857142857143
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.103645733918687,
+      "pass_metrics_unchanged": false
+    },
+    "swarm_pruned": {
+      "paired_trials": 70,
+      "only_chosen_passes": 1,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 1,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.014285714285714235,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.042857142857142816
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.6931103678929769,
+      "pass_metrics_unchanged": false
+    },
+    "orchestrator_no_model_turns": {
+      "paired_trials": 70,
+      "only_chosen_passes": 0,
+      "only_other_passes": 0,
+      "mcnemar_exact_p": 1.0,
+      "sign_test_p": 1.0,
+      "paired_claims": 14,
+      "claims_only_chosen_passes": 0,
+      "claims_only_other_passes": 0,
+      "claim_level_mcnemar_exact_p": 1.0,
+      "pass_rate_diff_chosen_minus_other": 0.0,
+      "pass_rate_diff_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_per_success_ratio_other_over_chosen": 1.3225806451612903,
+      "pass_metrics_unchanged": true
+    }
+  },
+  "notes": {
+    "bootstrap": "percentile, 10000 resamples, claims resampled with all their seeds, rng seed 20261117",
+    "mcnemar": "exact two-sided on paired (claim, seed) outcomes; discordant pairs only. Seeds of one claim are correlated, so the trial-level p-value is optimistic; claim_level_mcnemar_exact_p uses claims (all seeds pass) as the unit",
+    "approval_bypass_count": "trials with status resolved on claims whose label has approval_ok=false (public set)",
+    "secret_leak_count": "trials failed with reason forbidden_substring (CANARY or personal data found in trace/result)"
+  },
+  "source_benchmark": "reports/bonus_benchmark.json"
+}
