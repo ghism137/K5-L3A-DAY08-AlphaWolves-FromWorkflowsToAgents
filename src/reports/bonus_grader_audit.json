@@ -1,0 +1,294 @@
+{
+  "delay_relation": {
+    "amount_delay_2": 0,
+    "amount_delay_3": 35000,
+    "flips_to_shipping_fee": true
+  },
+  "matrix": {
+    "official": {
+      "infra_errors_do_not_move_pass_rate": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_rate",
+            "expected": 0.75,
+            "actual": 0.5625
+          },
+          {
+            "metric": "pass_5",
+            "expected": 0.6666666666666666,
+            "actual": 0.5
+          },
+          {
+            "metric": "seed_pass_rates",
+            "expected": {
+              "11": 0.8333333333333334,
+              "22": 0.6666666666666666
+            },
+            "actual": {
+              "11": 0.625,
+              "22": 0.5
+            }
+          },
+          {
+            "metric": "seed_variance",
+            "expected": 0.006944444444444451,
+            "actual": 0.00390625
+          },
+          {
+            "metric": "seed_min",
+            "expected": 0.6666666666666666,
+            "actual": 0.5
+          },
+          {
+            "metric": "seed_max",
+            "expected": 0.8333333333333334,
+            "actual": 0.625
+          },
+          {
+            "metric": "cost_per_success_vnd",
+            "expected": 21.055555555555557,
+            "actual": 23.72222222222222
+          },
+          {
+            "metric": "mean_steps",
+            "expected": 4.25,
+            "actual": 3.4375
+          },
+          {
+            "metric": "mean_model_calls",
+            "expected": 2.0,
+            "actual": 1.75
+          },
+          {
+            "metric": "mean_tool_calls",
+            "expected": 5.0,
+            "actual": 4.0
+          },
+          {
+            "metric": "graded_trials",
+            "expected": 12,
+            "actual": 16
+          },
+          {
+            "metric": "total_simulated_cost_vnd",
+            "expected": 189.5,
+            "actual": 213.5
+          }
+        ]
+      },
+      "duplicated_list_keeps_rates_doubles_totals": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6666666666666666,
+            "actual": 0.0
+          }
+        ]
+      },
+      "infra_replace_keeps_pass5": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6,
+            "actual": 0.5
+          }
+        ]
+      },
+      "permutation_invariance": {
+        "holds": true,
+        "violations": []
+      }
+    },
+    "grader_a": {
+      "infra_errors_do_not_move_pass_rate": {
+        "holds": true,
+        "violations": []
+      },
+      "duplicated_list_keeps_rates_doubles_totals": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6666666666666666,
+            "actual": 0.0
+          },
+          {
+            "metric": "cost_per_success_vnd",
+            "expected": 31.5,
+            "actual": 26.27777777777778
+          },
+          {
+            "metric": "total_simulated_cost_vnd (x2)",
+            "expected": 567.0,
+            "actual": 473.0
+          }
+        ]
+      },
+      "infra_replace_keeps_pass5": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6,
+            "actual": 0.5
+          }
+        ]
+      },
+      "permutation_invariance": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "cost_per_success_vnd (reversed)",
+            "expected": 31.5,
+            "actual": 31.666666666666668
+          },
+          {
+            "metric": "total_simulated_cost_vnd (reversed)",
+            "expected": 283.5,
+            "actual": 285.0
+          },
+          {
+            "metric": "cost_per_success_vnd (shuffled)",
+            "expected": 31.5,
+            "actual": 31.555555555555557
+          },
+          {
+            "metric": "total_simulated_cost_vnd (shuffled)",
+            "expected": 283.5,
+            "actual": 284.0
+          }
+        ]
+      }
+    },
+    "grader_b": {
+      "infra_errors_do_not_move_pass_rate": {
+        "holds": true,
+        "violations": []
+      },
+      "duplicated_list_keeps_rates_doubles_totals": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6666666666666666,
+            "actual": 0.0
+          }
+        ]
+      },
+      "infra_replace_keeps_pass5": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6,
+            "actual": 0.5
+          }
+        ]
+      },
+      "permutation_invariance": {
+        "holds": true,
+        "violations": []
+      }
+    },
+    "grader_c": {
+      "infra_errors_do_not_move_pass_rate": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_rate",
+            "expected": 0.75,
+            "actual": 0.5625
+          },
+          {
+            "metric": "pass_5",
+            "expected": 0.6666666666666666,
+            "actual": 0.5
+          },
+          {
+            "metric": "seed_pass_rates",
+            "expected": {
+              "11": 0.8333333333333334,
+              "22": 0.6666666666666666
+            },
+            "actual": {
+              "11": 0.625,
+              "22": 0.5
+            }
+          },
+          {
+            "metric": "seed_variance",
+            "expected": 0.006944444444444451,
+            "actual": 0.00390625
+          },
+          {
+            "metric": "seed_min",
+            "expected": 0.6666666666666666,
+            "actual": 0.5
+          },
+          {
+            "metric": "seed_max",
+            "expected": 0.8333333333333334,
+            "actual": 0.625
+          },
+          {
+            "metric": "cost_per_success_vnd",
+            "expected": 21.055555555555557,
+            "actual": 23.72222222222222
+          },
+          {
+            "metric": "mean_steps",
+            "expected": 4.25,
+            "actual": 3.4375
+          },
+          {
+            "metric": "mean_model_calls",
+            "expected": 2.0,
+            "actual": 1.75
+          },
+          {
+            "metric": "mean_tool_calls",
+            "expected": 5.0,
+            "actual": 4.0
+          },
+          {
+            "metric": "graded_trials",
+            "expected": 12,
+            "actual": 16
+          },
+          {
+            "metric": "total_simulated_cost_vnd",
+            "expected": 189.5,
+            "actual": 213.5
+          }
+        ]
+      },
+      "duplicated_list_keeps_rates_doubles_totals": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6666666666666666,
+            "actual": 0.0
+          }
+        ]
+      },
+      "infra_replace_keeps_pass5": {
+        "holds": false,
+        "violations": [
+          {
+            "metric": "pass_5",
+            "expected": 0.6,
+            "actual": 0.5
+          }
+        ]
+      },
+      "permutation_invariance": {
+        "holds": true,
+        "violations": []
+      }
+    }
+  }
+}
