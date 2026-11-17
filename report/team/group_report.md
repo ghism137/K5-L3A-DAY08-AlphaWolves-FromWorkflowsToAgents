@@ -6,7 +6,7 @@ Tối đa 5 trang ngoài phụ lục. Số liệu lấy từ file trong `src/rep
 
 - Tên nhóm: AlphaWolves (một thành viên: Trần Thái Hưng, 2A202603557)
 - Thành viên: xem `TEAM.md`
-- Commit chốt (trùng `report/team/decision_adr.md`): ab1772a
+- Commit chốt (trùng `report/team/decision_adr.md`): d1787f1
 
 ## 2. Mục tiêu và cách tiếp cận
 

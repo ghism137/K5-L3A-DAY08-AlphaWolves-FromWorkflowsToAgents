@@ -21,7 +21,7 @@ Nhóm chỉ có một thành viên nên mọi vai trò (integration, ba shape, l
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| Trần Thái Hưng (2A202603557) | Workflow, single, orchestrator, benchmark, báo cáo | b46afc3 (workflow), 33bbe5e (single), 6b8d06c (orchestrator), ac417ba (test), 1716609 và ab1772a (report do công cụ sinh) | `src/tests/test_my_shapes.py` (nhiều test, chạy trên cả ba shape) |
+| Trần Thái Hưng (2A202603557) | Workflow, single, orchestrator, benchmark, bonus B4 và B7, báo cáo | b46afc3 (workflow), 33bbe5e (single), 6b8d06c (orchestrator), ac417ba (test), 1716609 và ab1772a (report do công cụ sinh), ea9532f (bonus B7), 65583f7 (bonus B4) | `src/tests/test_my_shapes.py` (chạy trên cả ba shape), `src/tests/test_bonus_grader_audit.py`, `src/tests/test_bonus_ablation.py` |
 
 ## Cá nhân
 
